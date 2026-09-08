@@ -8,7 +8,7 @@ export const profile = {
   location: "Lahore, Pakistan",
   email: "falaksherdev@gmail.com",
   phone: "+92 322 4511297",
-  resumeUrl: "/resume.pdf",
+  resumeUrl: "/Falak Sher - Frontend Engineer React JS.pdf",
   availability: "Open to freelance & full-time roles",
   socials: [
     { label: "GitHub", href: "https://github.com/falaksherdev" },
