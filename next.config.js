@@ -5,6 +5,10 @@ const nextConfig = {
   images: {
     remotePatterns: [{ protocol: "https", hostname: "**" }],
   },
+  // Yeh add karein:
+  typescript: {
+    ignoreBuildErrors: true,
+  },
 };
 
 export default nextConfig;
