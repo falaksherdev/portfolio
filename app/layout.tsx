@@ -3,7 +3,7 @@ import { Space_Grotesk, Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { profile } from "@/data/portfolio";
-
+import Script from "next/script";
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
   variable: "--font-space-grotesk",
@@ -15,7 +15,7 @@ const inter = Inter({
   variable: "--font-inter",
   display: "swap",
 });
-
+a;
 const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
   variable: "--font-jetbrains",
@@ -36,6 +36,20 @@ export default function RootLayout({
         className={`${spaceGrotesk.variable} ${inter.variable} ${jetbrainsMono.variable} antialiased`}
       >
         <ThemeProvider>{children}</ThemeProvider>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-XGBEP3X3W3"
+          strategy="afterInteractive"
+        />
+
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){window.dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-XGBEP3X3W3');
+  `}
+        </Script>
       </body>
     </html>
   );
