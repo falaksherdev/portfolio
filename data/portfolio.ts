@@ -1,4 +1,3 @@
-
 export const profile = {
   name: "Falak Sher",
   role: "Full Stack Developer",
@@ -28,7 +27,14 @@ export const skills = {
     "TanStack Query",
     "TanStack Table",
   ],
-  backend: ["Node.js", "Express.js", "MongoDB", "Mongoose", "REST APIs", "JWT Auth"],
+  backend: [
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "Mongoose",
+    "REST APIs",
+    "JWT Auth",
+  ],
   tools: ["Git & GitHub", "Docker", "Figma", "Vercel", "Postman", "Jest"],
 };
 
@@ -44,12 +50,38 @@ export type Project = {
 };
 
 export const projects: Project[] = [
-
+  {
+    name: "MoneyMov",
+    status: "live",
+    statusLabel: "Personal Project",
+    url: "https://moneymov.netlify.app",
+    description:
+      "A free personal finance tracker that handles income, expenses, investments, committees and lending correctly instead of treating everything as an expense. Designed, built and deployed solo as a full-stack MERN application.",
+    points: [
+      "Built the full stack end-to-end with React, Node.js, Express and MongoDB, from database schemas to deployment",
+      "Modelled income, expenses, investments (including committees/bachat) and lending as separate transaction types, so balances and savings are calculated correctly",
+      "Implemented secure authentication with bcrypt hashing, JWT in httpOnly cookies, email verification and forgot/reset password using hashed, expiring tokens",
+      "Hardened the API with Helmet, rate limiting, NoSQL injection sanitization and per-user data scoping on every route",
+      "Built an analytics dashboard with Recharts: category breakdown, income vs spending trend, and weekly, monthly, yearly or custom date ranges",
+      "Added multi-currency support, custom categories and a personalized onboarding, with a responsive UI designed for phones",
+      "Deployed the frontend on Netlify and the API on Render, and debugged production issues including cross-site cookies, CORS and iOS Safari behavior",
+    ],
+    tech: [
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "REST APIs",
+      "JWT",
+      "Tailwind CSS",
+    ],
+  },
   {
     name: "EZ Dubai Visa",
     status: "live",
     url: "https://ezdubaivisa.com",
-    description: "A visa services platform with responsive, performance-optimized frontend interfaces.",
+    description:
+      "A visa services platform with responsive, performance-optimized frontend interfaces.",
     points: [
       "Developed and maintained responsive frontend interfaces across devices",
       "Optimized page performance for a smoother user experience",
@@ -73,7 +105,8 @@ export const projects: Project[] = [
     name: "Travel UAE",
     status: "live",
     url: "https://traveluae.ae",
-    description: "A travel services website built with modern, cross-device UI components.",
+    description:
+      "A travel services website built with modern, cross-device UI components.",
     points: [
       "Implemented modern, reusable UI components across the site",
       "Ensured consistent cross-device and cross-browser compatibility",
@@ -149,7 +182,6 @@ export const projects: Project[] = [
     tech: ["React.js", "REST APIs", "SaaS", "Tailwind CSS"],
   },
 
-
   {
     name: "OlympiaHub — SaaS Productivity Platform",
     status: "not-live",
@@ -178,7 +210,6 @@ export const projects: Project[] = [
     tech: ["React.js", "Node.js", "Express.js", "MongoDB"],
   },
 
-
   {
     name: "Third-Party API Integration Platform",
     status: "not-live",
@@ -198,8 +229,10 @@ export const projects: Project[] = [
     status: "live",
     statusLabel: "Practice Project",
     url: "https://timebeee.netlify.app/",
-    figmaUrl: "https://www.figma.com/design/lktIWRyBzG4Z4FO69blNKU/SWAPPROO-Dashboard?node-id=0-1&p=f&t=tRT0hL2lUxb85Z8k-0",
-    description: "A fully responsive time tracking and productivity dashboard built from a Figma design as a practice project. Features real-time timers, project analytics, and detailed activity insights.",
+    figmaUrl:
+      "https://www.figma.com/design/lktIWRyBzG4Z4FO69blNKU/SWAPPROO-Dashboard?node-id=0-1&p=f&t=tRT0hL2lUxb85Z8k-0",
+    description:
+      "A fully responsive time tracking and productivity dashboard built from a Figma design as a practice project. Features real-time timers, project analytics, and detailed activity insights.",
     points: [
       "Converted Figma design to fully functional React application",
       "Real-time timer with start/stop and pause functionality",
@@ -217,8 +250,10 @@ export const projects: Project[] = [
     status: "live",
     statusLabel: "Practice Project",
     url: "https://swappro-dashboard.netlify.app/dashboard/products",
-    figmaUrl: "https://www.figma.com/design/lktIWRyBzG4Z4FO69blNKU/SWAPPROO-Dashboard?node-id=0-1&p=f&t=tRT0hL2lUxb85Z8k-0",
-    description: "A product management dashboard built from a Figma design as a practice project. Features a clean product listing with filtering, status management, and responsive data tables.",
+    figmaUrl:
+      "https://www.figma.com/design/lktIWRyBzG4Z4FO69blNKU/SWAPPROO-Dashboard?node-id=0-1&p=f&t=tRT0hL2lUxb85Z8k-0",
+    description:
+      "A product management dashboard built from a Figma design as a practice project. Features a clean product listing with filtering, status management, and responsive data tables.",
     points: [
       "Converted Figma design to fully functional React dashboard application",
       "Product listing with key fields: Name, Category, Brand, Variants, and Status",
@@ -288,10 +323,10 @@ export type Education = {
 
 export const education: Education[] = [
   {
-    school: "Government College Township, Lahore (Affiliated with University of the Punjab)",
+    school:
+      "Government College Township, Lahore (Affiliated with University of the Punjab)",
     degree: "Associate Degree, Bachelors in Information Technology",
     duration: "2018 — 2020",
-
   },
   {
     school: "Government College Township, Lahore",
